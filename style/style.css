@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@531&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* #FEFCFB */
+    background: #ffffff;
+    font-size: 62.5%;
+    font-family: 'Exo 2', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* NAV */
+.main-head{
+    background: #f0f0f0;
+    color: #000000;
+    position: sticky;
+}
+
+nav{
+    min-height: 10vh;
+    font-size: 1rem;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul{
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo{
+    flex: 2 1 40rem; 
+    justify-content: center;
+}
+nav a{
+    color: #3b3b3b;
+    transition: .1s ease-in-out;
+}
+nav a:hover{
+    color: #1488cb;
+}
+
+.hero{
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.hero-about{
+    font-size: 3rem;
+}
+
+.hero-img img{
+    width: 40rem;
+}
+.hero-about h3{
+    color: #1488cb;
+    margin: 1.5rem 0rem ;
+}
+.hero-about p{
+    font-size: 1.5rem;
+}
+
+.hero button{
+    padding: 1rem 2.6rem;
+    background: #D66853;
+    border: none;
+    color: white;
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin: 2.5rem 0rem;
+    cursor: pointer;
+    transition: .2s ease;
+} 
+.hero button:hover{
+    background: #993622;
+}
+
+/* Materials Section */
+
+.materials-main{
+    background-color: #fff6f2;
+}
+.materials{
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+}
+.material-head{
+    font-size: 4rem;
+    padding: 3rem;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+.copy{
+    font-size: 1rem;
+    display: flex;
+    padding: 2rem 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #3d3d3de7;
+    font-style: italic;
+}
+.cards{
+    margin: auto;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.card{
+    background: #30e6c7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 15rem;
+    margin: 2rem 1rem;
+    height: 20rem;
+    border-radius: 0.5rem;
+    box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.137);
+    transition: .2s ease-in;
+}
+.card:hover{
+    margin-bottom: 4rem;
+ 
+}
+.card-see-all{
+    display: none;
+}
+.card-title{
+    font-size: 1.5rem;
+    
+}
+.card li{
+    list-style: disc;
+    text-align: left;
+}
+.sub-list{
+    font-weight: 600;
+    font-size: 0.6rem;
+    margin: 3rem 0rem;
+}
+.card button{
+    padding: 0.6rem 2rem;
+    background: #D66853;
+    border: none;
+    color: white;
+    border-radius: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.card button:hover{
+    background: #1488cb;
+}
+
+/* Tutorials Section */
+.tutorials{
+    width: 90%;
+    margin: auto;
+}
+.tutorials-main{
+    height: 100vh;
+    background-color: #f2ffff;
+}
+.tutorials-head{
+    font-size: 4rem;
+    font-weight: 100;
+    padding: 3rem;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+.channel-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.channel-icons img{
+    border-radius: 50%;
+    margin: 2rem;
+    width: 10rem;
+    box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.137);
+}
+.tutorials h2{
+    font-weight: 90;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.see-tut a{
+    width: 10rem;
+    height: 10rem;
+    transition: .2s ease-in-out;
+    display: flex;
+    color: #535353;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.see-tut{
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: #1488cb;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+}
+.see-tut a:hover{
+    background: rgba(0, 0, 0, 0.185);
+    color: white;
+}
+.playlists{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.playlist{
+    background: #30e66d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: lighter;
+    padding: 2rem;
+    width: 15rem;
+    margin: 2rem 1rem;
+    height: 10rem;
+    border-radius: 0.5rem;
+    box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.137);
+    transition: .2s ease-in;
+}
+.playlists a{
+    color: white;
+}
+.playlist:hover{
+    background: #30e66d9d;
+}
+
+/* FOOTER */
+footer .auths{
+    padding: 1rem 0rem;
+    font-size: 1.5rem;    
+}
+.foot-main .attr a{
+    margin: 4rem 0 0 0;
+    display: flex;
+    align-items: flex-end;
+    font-size: 1rem;
+}
+.auths a{
+    font-size: 1.5rem;
+    color: #584cff;
+}
+  footer{
+    min-height: 30vh;  
+    background: #f1f1f1;
+  }
+  
+  .footer-container{
+    width: 60%;
+    margin: auto;
+    padding: 3rem 0rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+  }
+  .footer-container p{
+      padding: 0.8rem 0;
+      font-size: 1.5rem;
+      color: #f65e7d;
+  }
+  .left-col a{
+      font-size: 1rem;
+      color: #8464ed;
+  }
+  .logo{
+    width: 180px;
+  }
+  
+  .social-media{
+    margin: 20px 0;
+  }
+  
+  .social-media a{
+    color: #001a21;
+    margin-right: 25px;
+    font-size: 22px;
+    text-decoration: none;
+    transition: .3s linear;
+  }
+  
+  .social-media a:hover{
+    color: #fc5c65;
+  }
+  
+  .right-col h1{
+    font-size: 26px;
+  }
+  
+  .border{
+    width: 100px;
+    height: 4px;
+    background: #fc5c65;
+  }
+  
+  .page-content{
+    min-height: 100vh;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-container p{
+      font-size: 1.2rem;
+  }
+
+
+
+/* ***Media Query*** */
+@media screen and (max-width: 932px){
+      nav {
+          padding: 0.5rem;
+        text-align: center;
+      }
+      #logo {
+        padding: 2rem;
+      }
+      .hero{
+          height: 100%;
+        text-align: center;
+      }
+      .hero h3{
+          font-size: 2rem;
+      }
+      .hero p{
+        font-size: 1rem;
+    }
+    .hero button{
+        padding: 0.6rem 2rem;
+    }
+    .hero-img img{
+        width: 15rem;
+        /* padding: 1.5rem 0; */
+    }
+    .material-head{
+        font-size: 2.6rem;
+    }
+    .card-dis{
+        display: none;
+    }
+    .materials{
+        height: 100%;
+    }
+    .card-see-all{
+        height: 0.4rem;
+        padding: 3.8rem;
+        display: block;
+    }
+    .copy{
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    .tutorials-main{
+        height: 100%;
+    }
+    .tutorials-head{
+        font-size: 2.6rem;
+    }
+    footer{
+        align-items: center;
+        justify-content: center;
+    }
+    footer .right-text{
+        font-size: 1rem;
+    }
+}
