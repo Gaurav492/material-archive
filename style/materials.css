@@ -150,7 +150,6 @@ nav a:hover{
     color: #06D85F;
   }
   .popup .content {  
-      
       overflow: hidden;
   }
   .material .overlay a{
@@ -166,6 +165,22 @@ nav a:hover{
       color: brown;
   }
 
+  .accordion-toggle {
+    display: flex;
+    transition: .5s ease-in-out;
+  }
+  
+  .accordion-content {
+    display: none;
+    transition: .5s ease-in-out;
+  }
+  
+  .accordion-content.active {
+    display: grid;
+    transition: .5s ease-in-out;
+  }
+
+/* Media QUERY */
 @media screen and (max-width: 932px){
     nav {
         padding: 0.5rem;
