@@ -18,15 +18,9 @@ a{
 }
 
 /* NAV */
-.main-head{
-    background: #f0f0f0;
-    color: #000000;
-    position: sticky;
-}
-
 nav{
     min-height: 10vh;
-    font-size: 1rem;
+    font-size: 1.3rem;
     display: flex;
     width: 90%;
     margin: auto;
@@ -49,6 +43,9 @@ nav a{
     transition: .1s ease-in-out;
 }
 nav a:hover{
+    color: #1488cb;
+}
+.active{
     color: #1488cb;
 }
 
@@ -208,7 +205,10 @@ nav a:hover{
     border-radius: 50%;
     margin: 2rem;
     width: 10rem;
-    box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.137);
+    transition: .2s ease-in;
+}
+.channel-icons img:hover{
+    box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.431);
 }
 .tutorials h2{
     font-weight: 90;

@@ -103,6 +103,7 @@ nav a:hover{
     color: white;
 }
 .playlist-6{
+    color: white;
     background: #25cee4;
 }
 .material-5 a{
@@ -130,6 +131,14 @@ nav a:hover{
 .material-5{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 2rem;
+}
+.material-6{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 1rem;
     grid-auto-rows: minmax(100px, auto);
     margin: 2rem;
@@ -180,31 +189,42 @@ nav a:hover{
     align-items: center;
     justify-content: center;
     background: #fff;
+    color: black;
     border-radius: 5px;
     width: 40rem;
     height: 20rem;
     position: relative;
+    text-align: start;
   }
+
   .overlay .popup .close {
     position: absolute;
-    top: 20px;
-    right: 30px;
+    top: -10px;
+    right: 10px;
     transition: all 200ms;
     font-size: 3rem;
     font-weight: bold;
     text-decoration: none;
     color: #333;
   }
+  .popup .close {
+    padding: 1rem;
+  }
   .popup .close:hover {
     color: #06D85F;
   }
   .popup .content {
-      font-size: 1.5rem;
       overflow: hidden;
   }
   .popup .content ul li{
+    color: black;
     padding: 0.5rem 0rem;
   }
+  .popup .content ul li a{
+    font-size: 1.3rem;
+    color: black;
+  padding: 0.5rem 0rem;
+}
   .popup .content ul li a:hover{
     color: brown;
   }
@@ -331,11 +351,21 @@ footer .auths{
     }
     .popup{        
         height: 30rem;
-        width: 20rem;
+        width: 22rem;
       }
+      .overlay .popup .close {
+        top: -30px;
+        right: -10px;
+      }  
     .popup .content ul li {
         text-align: center;
         margin-bottom: 1rem;
         font-size: 1rem;
+    }
+    .material-5{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .material-6{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
