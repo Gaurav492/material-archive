@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@531&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* #FEFCFB */
+    background: #ffffff;
+    font-size: 62.5%;
+    font-family: 'Exo 2', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{  
+    color: #000000;
+    text-decoration: none;
+}
+
+/* NAV */
+.main-head{
+    background: #f0f0f0;
+    color: #000000;
+}
+
+nav{
+    min-height: 10vh;
+    font-size: 1.3rem;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul{
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo{
+    flex: 2 1 40rem; 
+    justify-content: center;
+}
+nav a{
+    color: #3b3b3b;
+    transition: .1s ease-in-out;
+}
+nav a:hover{
+    color: #1488cb;
+}
+.active{
+    color: #1488cb;
+}
+
+/* Tutorial-main */
+.tutorial-main{
+    font-family: Calibri,  sans-serif;
+}
+.title{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem;
+}
+.playlist-section{
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+form input{
+    border: none;
+    border-bottom: 0.1rem solid black;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    text-align: start;
+    padding: 1.5rem 0rem;
+    outline: none;
+}
+form button{
+    border: none;
+    background: cadetblue;
+    color: white;
+    cursor: pointer;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    text-align: start;
+    padding: 1.5rem 2.5rem;
+    outline: none;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #00000000, #131635bf, #00000000);
+}
+.playlist{
+    color: white;
+    width: 12rem;
+    height: 8rem;
+    padding: 2rem 4rem;
+    border-radius: 0.5rem;
+    background: #1a99b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playlist-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5rem;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 2rem;
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 932px){
+    nav {
+        padding: 0.5rem;
+        text-align: center;
+    }
+    #logo {
+        padding: 2rem;
+    }
+    
+}
