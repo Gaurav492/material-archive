@@ -18,6 +18,10 @@ a{
 }
 
 /* NAV */
+.main-head{
+    background: #f0f0f0;
+    color: #000000;
+}
 nav{
     min-height: 10vh;
     font-size: 1.3rem;
@@ -135,7 +139,7 @@ nav a:hover{
     padding: 2rem;
     width: 15rem;
     margin: 2rem 1rem;
-    height: 20rem;
+    height: 22rem;
     border-radius: 0.5rem;
     box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.137);
     transition: .2s ease-in;
@@ -152,6 +156,8 @@ nav a:hover{
     
 }
 .card li{
+    padding-bottom: 0.5rem;
+    font-size: 0.8rem;
     list-style: disc;
     text-align: left;
 }
@@ -169,6 +175,7 @@ nav a:hover{
     font-size: 1rem;
     cursor: pointer;
     transition: .3s ease;
+    outline: none;
 }
 .card button:hover{
     background: #1488cb;
