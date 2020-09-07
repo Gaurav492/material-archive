@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@531&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    /* #FEFCFB */
+    background: #ffffff;
+    font-size: 62.5%;
+    font-family: 'Exo 2', sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+
+/* NAV */
+.main-head{
+    background: #f0f0f0;
+    color: #000000;
+}
+nav{
+    min-height: 10vh;
+    font-size: 1.3rem;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul{
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    align-items: center;
+}
+#logo{
+    flex: 2 1 40rem; 
+    justify-content: center;
+}
+nav a{
+    color: #3b3b3b;
+    transition: .1s ease-in-out;
+}
+nav a:hover{
+    color: #1488cb;
+}
+.active{
+    color: #1488cb;
+}
+
+/* ABOUT SECTION */
+.about-section{
+    height: 90vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.left-section{
+    padding: 3rem 0;
+}
+.left-section h2{
+    font-size: 3rem;
+}
+.left-section p{
+    font-weight: 700;
+    font-size: 1.5rem;
+    /* padding: 1.5rem 0; */
+    color: #4d4d4d;
+}
+.left-section p span{
+    color: #0f2185;
+}
+button{
+    padding: 1rem 2.6rem;
+    background: #53d69f;
+    border: none;
+    color: white;
+    border-radius: 1rem;
+    font-size: 1rem;
+    margin: 2.5rem 0rem;
+    cursor: pointer;
+    transition: .2s ease;
+    outline: none;
+} 
+button:hover{
+    background: #227799;
+}
+button a{
+    color: white;
+}
+.right-section img{
+     width: 40rem;
+} 
+
+.pwa{
+    height: 100vh;
+    background: #fff5f3;
+}
+.snaps{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(100px, auto);
+}
+.snaps img{
+    width: 10rem;
+    padding: 2rem;
+}
+
+
+/* ***Media Query*** */
+ @media screen and (max-width: 932px){
+    nav {
+        padding: 0.5rem;
+      text-align: center;
+    }
+    #logo {
+      padding: 2rem;
+    }
+    .about-section{
+      height: 100%;
+      text-align: center;
+      flex-wrap: wrap;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .left-section{
+        margin: auto;
+    }
+    .left-section h2{
+        padding: 2rem 0;
+        font-size: 1.7rem;
+    }
+    .left-section p{
+        padding: 2rem;
+      font-size: 1.2rem;
+    }
+    .left-section .display{
+        display: none;
+    }
+    .right-section img{
+        /* display: none; */
+      width: 20rem;
+    }
+    .pwa{
+        height: 100%;
+    }
+    .snaps{
+        flex-wrap: wrap;
+    }
+}   
