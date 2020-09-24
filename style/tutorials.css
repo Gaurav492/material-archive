@@ -207,6 +207,30 @@ footer .auths{
   }
 
 /* MEDIA QUERY */
+@media screen and (max-width: 1500px){
+    nav {
+        padding: 0.5rem;
+        text-align: center;
+    }
+    #logo {
+        padding: 2rem;
+    }
+    .playlist{
+        font-size: 1.2rem;
+    }
+    .playlist-grid{
+        margin-top: 2rem;
+    }
+    form input{
+        border-bottom: 0.1rem solid black;
+        margin-right: 1rem;
+        font-size: 1.3rem;
+        text-align: start;
+    }
+    form span {
+        font-size: 1.2rem;
+    }
+}
 @media screen and (max-width: 932px){
     nav {
         padding: 0.5rem;
