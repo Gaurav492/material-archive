@@ -141,15 +141,26 @@ nav a:hover{
     margin: 2rem 1rem;
     height: 22rem;
     border-radius: 0.5rem;
-    box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.137);
+
     transition: .2s ease-in;
 }
 .card:hover{
-    margin-bottom: 4rem;
+    box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.137);
  
 }
 .card-see-all{
     display: none;
+}
+.card-see-all button{
+    padding: 0.6rem 2rem;
+    background: #D66853;
+    border: none;
+    color: white;
+    border-radius: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s ease;
+    outline: none;
 }
 .card-title{
     font-size: 1.5rem;
@@ -269,14 +280,13 @@ nav a:hover{
     margin: 2rem 1rem;
     height: 10rem;
     border-radius: 0.5rem;
-    box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.137);
     transition: .2s ease-in;
 }
 .playlists a{
     color: white;
 }
 .playlist:hover{
-    background: #30e66d9d;
+    box-shadow: 6px 5px 20px rgba(0, 0, 0, 0.137);
 }
 
 /* FOOTER */
@@ -361,6 +371,55 @@ footer .auths{
 
 
 /* ***Media Query*** */
+@media screen and (max-width: 1500px){
+    nav {
+    padding: 0.5rem;
+      text-align: center;
+    }
+    #logo {
+      padding: 2rem;
+    }
+    .hero{
+        height: 100%;
+      text-align: center;
+    }
+    .hero h3{
+        font-size: 2rem;
+    }
+    .hero p{
+      font-size: 1rem;
+  }
+  .hero button{
+      padding: 0.6rem 2rem;
+  }
+  .hero-img img{
+      width: 15rem;
+      /* padding: 1.5rem 0; */
+  }
+  .material-head{
+      font-size: 2.6rem;
+  }
+  .materials{
+      height: 100%;
+  }
+  .copy{
+      text-align: center;
+      font-size: 0.8rem;
+  }
+  .tutorials-main{
+      height: 100%;
+  }
+  .tutorials-head{
+      font-size: 2.6rem;
+  }
+  footer{
+      align-items: center;
+      justify-content: center;
+  }
+  footer .right-text{
+      font-size: 1rem;
+  }
+}
 @media screen and (max-width: 932px){
       nav {
           padding: 0.5rem;
