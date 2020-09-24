@@ -195,6 +195,42 @@ footer .auths{
 
 
 /* ***Media Query*** */
+@media screen and (max-width: 1500px){
+    nav {
+        padding: 0.5rem;
+      text-align: center;
+    }
+    #logo {
+      padding: 2rem;
+    }
+    .about-section{
+      height: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .left-section{
+        margin: auto;
+    }
+    .left-section h2{
+        padding: 2rem 0;
+        font-size: 1.7rem;
+    }
+    .left-section p{
+        padding: 2rem;
+      font-size: 1.2rem;
+    }
+    .left-section .display{
+        display: none;
+    }
+    .pwa{
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .snaps{
+        flex-wrap: wrap;
+    }
+}   
  @media screen and (max-width: 932px){
     nav {
         padding: 0.5rem;
